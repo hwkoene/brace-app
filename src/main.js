@@ -40,7 +40,7 @@ function requestJSON(filename)
     return data;
 };
 
-var sensor_config = requestJSON("../assets/sensors.json");
+var sensor_config = requestJSON("/assets/sensors.json");
 
 // Add legend
 var lut = new Lut();
@@ -80,10 +80,10 @@ var material = new THREE.MeshPhongMaterial( {
     shininess: 0
 } );
 
-var datapoint = requestJSON("../assets/data/datapoint0.json");
+var datapoint = requestJSON("/assets/data/datapoint0.json");
 
 var loader = new STLLoader();
-loader.load("../assets/brace.stl", function (geometry) {
+loader.load("/assets/brace.stl", function (geometry) {
     // geometry.center();
     var mesh = new THREE.Mesh(geometry, material);
 
