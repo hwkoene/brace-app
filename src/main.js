@@ -40,7 +40,7 @@ function requestJSON(filename)
     return data;
 };
 
-var sensor_config = requestJSON("/assets/sensors.json");
+var sensor_config = requestJSON("../assets/sensors.json");
 
 // Add legend
 var lut = new Lut();
