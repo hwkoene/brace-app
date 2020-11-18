@@ -83,7 +83,7 @@ var material = new THREE.MeshPhongMaterial( {
 var datapoint = requestJSON("../assets/data/datapoint0.json");
 
 var loader = new STLLoader();
-loader.load("./assets/brace.stl", function (geometry) {
+loader.load("../assets/brace.stl", function (geometry) {
     // geometry.center();
     var mesh = new THREE.Mesh(geometry, material);
 
